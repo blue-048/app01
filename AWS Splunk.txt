@@ -1,0 +1,668 @@
+i-0c08cc4d5ab1a2fb6
+54.186.138.6254.186.138.62
+
+http://54.186.138.62:8000/en_US/account/login?return_to=%2Fko-KR%2F
+
+http://54.186.138.62:8000/en-US/app/launcher/home
+
+SPLUNK-i-0c08cc4d5ab1a2fb6
+
+안녕하세요. 
+AWS TechCamp (ex. Builders Korea) 에 참석해주셔서 감사합니다. 
+
+*모든 과정은 이론+실습으로 구성되어 있습니다. 
+*실습 전 계정을 꼭 신청해주세요 : https://portal.aws.amazon.com/billing/signup#/start
+*실습 전 개인 랩탑을 꼭 준비해주세요.
+*발표자료는 유인물 (Hands-out) 에서 다운로드 하실 수 있습니다.
+*발표자료 및 이론 세션 다시보기 서비스는 세션 종료 1개월 이내로 확인 가능합니다. 
+다시보기: https://kr-resources.awscloud.com/aws-builders-korea-program
+*실습(HOL) 진행 후 설문조사에 참여하신 분들에 한하여 AWS 크레딧 (1인당 $50 USD 크레딧, 화~목 전체 세션 통틀어 1회 제공) 을 지원드립니다. AWS 크레딧 지원은 실습 진행 및 설문 참석자에만 해당됩니다. AWS 크레딧 바우처는 등록하신 이메일 계정으로 행사 종료 후 1개월 이내로 발송 드릴 예정입니다. 
+*실습 세션(HOL) 진행은 일부 비용이 당월 과금됩니다. 
+*실습 워크샵 링크 : https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11
+
+
+
+청중 질문
+
+질문: 마지막 QR코드 링크 좀 받고 싶습니다. 화면이 너무 빨리 지나가서요.
+
+답변: https://m.site.naver.com/1kP0w
+
+
+
+청중 질문
+
+질문: 마지막 QR코드 링크 좀 받고 싶습니다. 화면이 너무 빨리 지나가서요.
+
+답변: https://www.aws.training/certification?trk=fb88756f-762d-4def-906c-1cc529acbf44&sc_channel=el
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 2:06: 안녕하세요. 세션 진행 중 궁금하신 사항 질문주시면 답변 도와드리도록 하겠습니다.
+
+
+
+청중 질문
+
+질문: 안녕하세요. 주로 실시간 파이프라인 축으로 엘라스틱서치 스택이 있는데 스플렁크도 같은 역할을 하는 것 같습니다. 엘라스틱 스택은 비용문제로 인해 스플렁크를 대안으로 생각해볼 수 있을 거 같은데 비용체계는 어떠한지 궁금하고 엘라스틱스택에 대비해서 특별히 어떤 장점이 있는지 궁금합니다
+
+답변: 1. 스플렁크는 수집된 데이터를 분석하는데있어서  index A와 index B를 join 기능으로 분석가능합니다. 
+2. 데이터를 저장하는데 있어서 스크립트 작성없이 바로 저장할수 있습니다. 
+3. 키바나 같은 프론트 서비스인 서치헤드로 클러스터링 구성을 하여 안정화 지원을 합니다.
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 2:33: hkate@splunk.com로 최종 실습 결과물을 캡쳐해 보내주세요!
+- 성함
+- 받으실 택배 주소
+- 전화번호
+- 티셔츠 사이즈
+- 대시보드 전체 화면 캡쳐(로그인 이름 포함) 
+
+Splunk t-shirt 를 보내드립니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:35: Splunk 세션의 설문조사는 https://m.site.naver.com/1kxFC 이곳에 남겨주시면, 추첨을 통하여 커피쿠폰을 드리고 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:35: 워크샵 링크는 https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11 이곳으로 접속하실 수 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:38: Splunk Enterprise의 경우 AWS Marketplace에는 Amazon Machine Image(AMI) 형태로 제공되며, 별도의 라이선스 비용이 부과되지 않습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:43: 실습을 하시다 어려운점 있으시면 채팅에 남겨주시면 도와드리도록 하겠습니다.
+
+
+
+청중 질문
+
+질문: Splunk Cloud 와 
+Splunk Observability Cloud  차이점이 궁금한데.. 
+
+답변: Splunk Cloud는 데이터 분석 플랫폼으로 주로 시스템의 로그 등의 데이터를 분석하는 제품이며 
+Splunk Observability Cloud 제품은 인프라, 어플리케이션 등을 모니터링하는 제품입니다.
+
+
+
+청중 질문
+
+질문: EC2 인스턴스가 splunk client인가요?
+
+답변: EC2 인스턴스는 splunk가 설치되어 있는 서버라고 생각하시면 될것 같습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:53: 실습의 내용은 https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11 에서 동일하게 가이드를 확인하실 수 있습니다.
+
+
+
+청중 질문
+
+질문: 시뮬레이터 말고 실제로 로그 수집하고 전송하는건 뭐가 담당하나요? 에이전트 같은걸 설치해야 하나요?
+
+답변: Universal Frowarder에 대해 더 궁금하시다면 아래의 링크 참고 부탁드립니다.
+https://www.splunk.com/en_us/blog/learn/splunk-universal-forwarder.html
+
+
+
+청중 질문
+
+질문: 시뮬레이터 말고 실제로 로그 수집하고 전송하는건 뭐가 담당하나요? 에이전트 같은걸 설치해야 하나요?
+
+답변: Splunk에서 무료로 제공되는 Forwarder라는 인스턴스를 통해 수집하실 수 있습니다.
+
+
+
+청중 질문
+
+질문: 방금 타임존 설정하는거 어디에서 하는지 다시 한번 알려주세요
+
+답변: 우측상단 Administrator를 클릭하신 후 Preferences에서 하실 수 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 3:08: 현재 https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11/ko-KR/task2 작업2까지 완료된 상태입니다. 3시 20분에 재개하도록 하겠습니다
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 3:23: 안녕하세요 현재 진행중인 실습의 최종 결과물을 hkate@splunk.com로 캡쳐해 보내주세요! 
+Splunk t-shirt 를 보내드립니다.
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 3:23: - 성함
+- 받으실 택배 주소
+- 전화번호
+- 티셔츠 사이즈
+- 대시보드 전체 화면 캡쳐(로그인 이름 포함)
+
+
+안녕하세요. 
+AWS TechCamp (ex. Builders Korea) 에 참석해주셔서 감사합니다. 
+
+*모든 과정은 이론+실습으로 구성되어 있습니다. 
+*실습 전 계정을 꼭 신청해주세요 : https://portal.aws.amazon.com/billing/signup#/start
+*실습 전 개인 랩탑을 꼭 준비해주세요.
+*발표자료는 유인물 (Hands-out) 에서 다운로드 하실 수 있습니다.
+*발표자료 및 이론 세션 다시보기 서비스는 세션 종료 1개월 이내로 확인 가능합니다. 
+다시보기: https://kr-resources.awscloud.com/aws-builders-korea-program
+*실습(HOL) 진행 후 설문조사에 참여하신 분들에 한하여 AWS 크레딧 (1인당 $50 USD 크레딧, 화~목 전체 세션 통틀어 1회 제공) 을 지원드립니다. AWS 크레딧 지원은 실습 진행 및 설문 참석자에만 해당됩니다. AWS 크레딧 바우처는 등록하신 이메일 계정으로 행사 종료 후 1개월 이내로 발송 드릴 예정입니다. 
+*실습 세션(HOL) 진행은 일부 비용이 당월 과금됩니다. 
+*실습 워크샵 링크 : https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11
+
+
+
+청중 질문
+
+질문: 마지막 QR코드 링크 좀 받고 싶습니다. 화면이 너무 빨리 지나가서요.
+
+답변: https://m.site.naver.com/1kP0w
+
+
+
+청중 질문
+
+질문: 마지막 QR코드 링크 좀 받고 싶습니다. 화면이 너무 빨리 지나가서요.
+
+답변: https://www.aws.training/certification?trk=fb88756f-762d-4def-906c-1cc529acbf44&sc_channel=el
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 2:06: 안녕하세요. 세션 진행 중 궁금하신 사항 질문주시면 답변 도와드리도록 하겠습니다.
+
+
+
+청중 질문
+
+질문: 안녕하세요. 주로 실시간 파이프라인 축으로 엘라스틱서치 스택이 있는데 스플렁크도 같은 역할을 하는 것 같습니다. 엘라스틱 스택은 비용문제로 인해 스플렁크를 대안으로 생각해볼 수 있을 거 같은데 비용체계는 어떠한지 궁금하고 엘라스틱스택에 대비해서 특별히 어떤 장점이 있는지 궁금합니다
+
+답변: 1. 스플렁크는 수집된 데이터를 분석하는데있어서  index A와 index B를 join 기능으로 분석가능합니다. 
+2. 데이터를 저장하는데 있어서 스크립트 작성없이 바로 저장할수 있습니다. 
+3. 키바나 같은 프론트 서비스인 서치헤드로 클러스터링 구성을 하여 안정화 지원을 합니다.
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 2:33: hkate@splunk.com로 최종 실습 결과물을 캡쳐해 보내주세요!
+- 성함
+- 받으실 택배 주소
+- 전화번호
+- 티셔츠 사이즈
+- 대시보드 전체 화면 캡쳐(로그인 이름 포함) 
+
+Splunk t-shirt 를 보내드립니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:35: Splunk 세션의 설문조사는 https://m.site.naver.com/1kxFC 이곳에 남겨주시면, 추첨을 통하여 커피쿠폰을 드리고 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:35: 워크샵 링크는 https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11 이곳으로 접속하실 수 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:38: Splunk Enterprise의 경우 AWS Marketplace에는 Amazon Machine Image(AMI) 형태로 제공되며, 별도의 라이선스 비용이 부과되지 않습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:43: 실습을 하시다 어려운점 있으시면 채팅에 남겨주시면 도와드리도록 하겠습니다.
+
+
+
+청중 질문
+
+질문: Splunk Cloud 와 
+Splunk Observability Cloud  차이점이 궁금한데.. 
+
+답변: Splunk Cloud는 데이터 분석 플랫폼으로 주로 시스템의 로그 등의 데이터를 분석하는 제품이며 
+Splunk Observability Cloud 제품은 인프라, 어플리케이션 등을 모니터링하는 제품입니다.
+
+
+
+청중 질문
+
+질문: EC2 인스턴스가 splunk client인가요?
+
+답변: EC2 인스턴스는 splunk가 설치되어 있는 서버라고 생각하시면 될것 같습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:53: 실습의 내용은 https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11 에서 동일하게 가이드를 확인하실 수 있습니다.
+
+
+
+청중 질문
+
+질문: 시뮬레이터 말고 실제로 로그 수집하고 전송하는건 뭐가 담당하나요? 에이전트 같은걸 설치해야 하나요?
+
+답변: Universal Frowarder에 대해 더 궁금하시다면 아래의 링크 참고 부탁드립니다.
+https://www.splunk.com/en_us/blog/learn/splunk-universal-forwarder.html
+
+
+
+청중 질문
+
+질문: 시뮬레이터 말고 실제로 로그 수집하고 전송하는건 뭐가 담당하나요? 에이전트 같은걸 설치해야 하나요?
+
+답변: Splunk에서 무료로 제공되는 Forwarder라는 인스턴스를 통해 수집하실 수 있습니다.
+
+
+
+청중 질문
+
+질문: 방금 타임존 설정하는거 어디에서 하는지 다시 한번 알려주세요
+
+답변: 우측상단 Administrator를 클릭하신 후 Preferences에서 하실 수 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 3:08: 현재 https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11/ko-KR/task2 작업2까지 완료된 상태입니다. 3시 20분에 재개하도록 하겠습니다
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 3:23: 안녕하세요 현재 진행중인 실습의 최종 결과물을 hkate@splunk.com로 캡쳐해 보내주세요! 
+Splunk t-shirt 를 보내드립니다.
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 3:23: - 성함
+- 받으실 택배 주소
+- 전화번호
+- 티셔츠 사이즈
+- 대시보드 전체 화면 캡쳐(로그인 이름 포함)
+
+
+
+청중 질문
+
+질문: 필드명을 Window로 설정해버렸습니다;;
+
+답변: 우측 상단 [Settings] > [Fields] > [Field extractions] 으로 접근하셔서 Window로 필터링하시면 추출하신 필드 정보 보실 수 있을겁니다.해당 추출명 클릭하시면 <Window> 부분을 <Platform>으로 변경하신 후 저장하시면 됩니다.
+
+
+
+청중 질문
+
+질문: 대시보드는 그냥 두면 자동 리프레시 되나요?
+
+답변: 리프레시 되지 않습니다.  시간선택기에서 리얼타임으로 선택하시면 선택한 시간 기준으로 리프레시 됩니다.
+
+
+
+청중 질문
+
+질문: 대시보드는 그냥 두면 자동 리프레시 되나요?
+
+답변: 간단한 옵션 변경을 통해 주기적으로(예: 5초마다) 리프레시 되도록 설정하실 수 있습니다.
+
+
+
+청중 질문
+
+질문: 필드명 변경하는 법이 뭘까요?
+
+답변: <Field Aliases를 통해 Field명 변경법> - 발표자분께서 언급하신 alias를 통해 필드명에 별칭을 세팅하시는 방법은 다음과 같습니다. 
+Settings > Fields > Field Aliases 에서 데이터의 sourcetype 입력후 기존 필드명 = 바꾸고 싶으신 필드명을 입력하시면 됩니다. 
+자세한 사항은 다음 docs를 참고해주세요 
+https://docs.splunk.com/Documentation/Splunk/9.2.0/Knowledge/Addaliasestofields
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:08: 잠시 쉬는 시간을 가지고 4시 15분에 재개하겠습니다
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:24: 안녕하세요 현재 진행중인 실습의 최종 결과물을 hkate@splunk.com로 캡쳐해 보내주세요!
+Splunk t-shirt 를 보내드립니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:24: - 성함
+- 받으실 택배 주소
+- 전화번호
+- 티셔츠 사이즈
+- 대시보드 전체 화면 캡쳐(로그인 이름 포함)
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:24: 리소스를 정리하기 전에, 먼저 캡처해서 저장해주세요!
+
+
+
+청중 질문
+
+질문: 쉽게 조인할 수 있는점을 보았는데요. csv파일을 올려서 그 안에 product_id를 한번 전처리해주고 조인하는 것이 search탭에서 가능한가요? 기존에는 SQL이나 파이썬으로 걸러내는 작업을 해야 하는 것을 splunk는 search쪽에서 바로 할 수 있는지 궁금합니다. 예를 들어 이 파일에 전체 product_id가 아니라 특정 id 는 걸러내고 조인하고 싶다고 할때 search 검색어로 그게 가능한가요? 아니면 여기서는 할 수 없고 미리 데이터를 넣어줄 때부터(앞단에서) 전처리된 상태로 들어와야 할까요?
+
+답변: csv파일의 필드명과 splunk 내의 데이터 필드명을 맞추는 작업에 대해 질의하신게 맞으실까요? 그렇다면 Lookup > Automatic lookups > Add new에서 필드명을 맞추는 작업을 하실 수 있습니다. 
+https://docs.splunk.com/Documentation/Splunk/9.2.0/SearchTutorial/Usefieldlookups#Make_the_lookup_automatic
+https://docs.splunk.com/Documentation/Splunk/9.2.0/Knowledge/DefineanautomaticlookupinSplunkWeb
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:28: 작업1의 17번의 방법(https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11/ko-KR/task1)으로 Splunk 인스턴스에 Shell로 접속하여, 작업7 - AI Assistant 사용하기의 2번 명령어(https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11/ko-KR/task7)를 실행시켜주시고 Splunk를 재기동해주셔야 합니다. 해당 명령어로 파일 업로드 용량 제한을 올릴 수 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:38: 안녕하세요, 진행중인 실습의 최종 결과물(대시보드)을 hkate@splunk.com 로 캡쳐해 보내주세요!  대시보드를 완성하신 모든 분들께 Splunk t-shirt 를 보내드립니다.
+- 성함  - 받으실 택배 주소  - 전화번호  - 티셔츠 사이즈  - 대시보드 전체 화면 캡쳐(로그인 이름 포함)
+// 중요! 리소스를 정리하기 전에, 먼저 캡처해서 저장해주세요!
+
+Splunk 세션을 마무리하기 전에, https://m.site.naver.com/1kxFC 에서 설문조사를 남겨주시면 100분을 추첨하여 커피 쿠폰을 보내드립니다!
+
+안녕하세요. 
+AWS TechCamp (ex. Builders Korea) 에 참석해주셔서 감사합니다. 
+
+*모든 과정은 이론+실습으로 구성되어 있습니다. 
+*실습 전 계정을 꼭 신청해주세요 : https://portal.aws.amazon.com/billing/signup#/start
+*실습 전 개인 랩탑을 꼭 준비해주세요.
+*발표자료는 유인물 (Hands-out) 에서 다운로드 하실 수 있습니다.
+*발표자료 및 이론 세션 다시보기 서비스는 세션 종료 1개월 이내로 확인 가능합니다. 
+다시보기: https://kr-resources.awscloud.com/aws-builders-korea-program
+*실습(HOL) 진행 후 설문조사에 참여하신 분들에 한하여 AWS 크레딧 (1인당 $50 USD 크레딧, 화~목 전체 세션 통틀어 1회 제공) 을 지원드립니다. AWS 크레딧 지원은 실습 진행 및 설문 참석자에만 해당됩니다. AWS 크레딧 바우처는 등록하신 이메일 계정으로 행사 종료 후 1개월 이내로 발송 드릴 예정입니다. 
+*실습 세션(HOL) 진행은 일부 비용이 당월 과금됩니다. 
+*실습 워크샵 링크 : https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11
+
+
+
+청중 질문
+
+질문: 마지막 QR코드 링크 좀 받고 싶습니다. 화면이 너무 빨리 지나가서요.
+
+답변: https://m.site.naver.com/1kP0w
+
+
+
+청중 질문
+
+질문: 마지막 QR코드 링크 좀 받고 싶습니다. 화면이 너무 빨리 지나가서요.
+
+답변: https://www.aws.training/certification?trk=fb88756f-762d-4def-906c-1cc529acbf44&sc_channel=el
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 2:06: 안녕하세요. 세션 진행 중 궁금하신 사항 질문주시면 답변 도와드리도록 하겠습니다.
+
+
+
+청중 질문
+
+질문: 안녕하세요. 주로 실시간 파이프라인 축으로 엘라스틱서치 스택이 있는데 스플렁크도 같은 역할을 하는 것 같습니다. 엘라스틱 스택은 비용문제로 인해 스플렁크를 대안으로 생각해볼 수 있을 거 같은데 비용체계는 어떠한지 궁금하고 엘라스틱스택에 대비해서 특별히 어떤 장점이 있는지 궁금합니다
+
+답변: 1. 스플렁크는 수집된 데이터를 분석하는데있어서  index A와 index B를 join 기능으로 분석가능합니다. 
+2. 데이터를 저장하는데 있어서 스크립트 작성없이 바로 저장할수 있습니다. 
+3. 키바나 같은 프론트 서비스인 서치헤드로 클러스터링 구성을 하여 안정화 지원을 합니다.
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 2:33: hkate@splunk.com로 최종 실습 결과물을 캡쳐해 보내주세요!
+- 성함
+- 받으실 택배 주소
+- 전화번호
+- 티셔츠 사이즈
+- 대시보드 전체 화면 캡쳐(로그인 이름 포함) 
+
+Splunk t-shirt 를 보내드립니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:35: Splunk 세션의 설문조사는 https://m.site.naver.com/1kxFC 이곳에 남겨주시면, 추첨을 통하여 커피쿠폰을 드리고 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:35: 워크샵 링크는 https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11 이곳으로 접속하실 수 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:38: Splunk Enterprise의 경우 AWS Marketplace에는 Amazon Machine Image(AMI) 형태로 제공되며, 별도의 라이선스 비용이 부과되지 않습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:43: 실습을 하시다 어려운점 있으시면 채팅에 남겨주시면 도와드리도록 하겠습니다.
+
+
+
+청중 질문
+
+질문: Splunk Cloud 와 
+Splunk Observability Cloud  차이점이 궁금한데.. 
+
+답변: Splunk Cloud는 데이터 분석 플랫폼으로 주로 시스템의 로그 등의 데이터를 분석하는 제품이며 
+Splunk Observability Cloud 제품은 인프라, 어플리케이션 등을 모니터링하는 제품입니다.
+
+
+
+청중 질문
+
+질문: EC2 인스턴스가 splunk client인가요?
+
+답변: EC2 인스턴스는 splunk가 설치되어 있는 서버라고 생각하시면 될것 같습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 2:53: 실습의 내용은 https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11 에서 동일하게 가이드를 확인하실 수 있습니다.
+
+
+
+청중 질문
+
+질문: 시뮬레이터 말고 실제로 로그 수집하고 전송하는건 뭐가 담당하나요? 에이전트 같은걸 설치해야 하나요?
+
+답변: Universal Frowarder에 대해 더 궁금하시다면 아래의 링크 참고 부탁드립니다.
+https://www.splunk.com/en_us/blog/learn/splunk-universal-forwarder.html
+
+
+
+청중 질문
+
+질문: 시뮬레이터 말고 실제로 로그 수집하고 전송하는건 뭐가 담당하나요? 에이전트 같은걸 설치해야 하나요?
+
+답변: Splunk에서 무료로 제공되는 Forwarder라는 인스턴스를 통해 수집하실 수 있습니다.
+
+
+
+청중 질문
+
+질문: 방금 타임존 설정하는거 어디에서 하는지 다시 한번 알려주세요
+
+답변: 우측상단 Administrator를 클릭하신 후 Preferences에서 하실 수 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 3:08: 현재 https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11/ko-KR/task2 작업2까지 완료된 상태입니다. 3시 20분에 재개하도록 하겠습니다
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 3:23: 안녕하세요 현재 진행중인 실습의 최종 결과물을 hkate@splunk.com로 캡쳐해 보내주세요! 
+Splunk t-shirt 를 보내드립니다.
+
+
+
+강채희(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 3:23: - 성함
+- 받으실 택배 주소
+- 전화번호
+- 티셔츠 사이즈
+- 대시보드 전체 화면 캡쳐(로그인 이름 포함)
+
+
+
+청중 질문
+
+질문: 필드명을 Window로 설정해버렸습니다;;
+
+답변: 우측 상단 [Settings] > [Fields] > [Field extractions] 으로 접근하셔서 Window로 필터링하시면 추출하신 필드 정보 보실 수 있을겁니다.해당 추출명 클릭하시면 <Window> 부분을 <Platform>으로 변경하신 후 저장하시면 됩니다.
+
+
+
+청중 질문
+
+질문: 대시보드는 그냥 두면 자동 리프레시 되나요?
+
+답변: 리프레시 되지 않습니다.  시간선택기에서 리얼타임으로 선택하시면 선택한 시간 기준으로 리프레시 됩니다.
+
+
+
+청중 질문
+
+질문: 대시보드는 그냥 두면 자동 리프레시 되나요?
+
+답변: 간단한 옵션 변경을 통해 주기적으로(예: 5초마다) 리프레시 되도록 설정하실 수 있습니다.
+
+
+
+청중 질문
+
+질문: 필드명 변경하는 법이 뭘까요?
+
+답변: <Field Aliases를 통해 Field명 변경법> - 발표자분께서 언급하신 alias를 통해 필드명에 별칭을 세팅하시는 방법은 다음과 같습니다. 
+Settings > Fields > Field Aliases 에서 데이터의 sourcetype 입력후 기존 필드명 = 바꾸고 싶으신 필드명을 입력하시면 됩니다. 
+자세한 사항은 다음 docs를 참고해주세요 
+https://docs.splunk.com/Documentation/Splunk/9.2.0/Knowledge/Addaliasestofields
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:08: 잠시 쉬는 시간을 가지고 4시 15분에 재개하겠습니다
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:24: 안녕하세요 현재 진행중인 실습의 최종 결과물을 hkate@splunk.com로 캡쳐해 보내주세요!
+Splunk t-shirt 를 보내드립니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:24: - 성함
+- 받으실 택배 주소
+- 전화번호
+- 티셔츠 사이즈
+- 대시보드 전체 화면 캡쳐(로그인 이름 포함)
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:24: 리소스를 정리하기 전에, 먼저 캡처해서 저장해주세요!
+
+
+
+청중 질문
+
+질문: 쉽게 조인할 수 있는점을 보았는데요. csv파일을 올려서 그 안에 product_id를 한번 전처리해주고 조인하는 것이 search탭에서 가능한가요? 기존에는 SQL이나 파이썬으로 걸러내는 작업을 해야 하는 것을 splunk는 search쪽에서 바로 할 수 있는지 궁금합니다. 예를 들어 이 파일에 전체 product_id가 아니라 특정 id 는 걸러내고 조인하고 싶다고 할때 search 검색어로 그게 가능한가요? 아니면 여기서는 할 수 없고 미리 데이터를 넣어줄 때부터(앞단에서) 전처리된 상태로 들어와야 할까요?
+
+답변: csv파일의 필드명과 splunk 내의 데이터 필드명을 맞추는 작업에 대해 질의하신게 맞으실까요? 그렇다면 Lookup > Automatic lookups > Add new에서 필드명을 맞추는 작업을 하실 수 있습니다. 
+https://docs.splunk.com/Documentation/Splunk/9.2.0/SearchTutorial/Usefieldlookups#Make_the_lookup_automatic
+https://docs.splunk.com/Documentation/Splunk/9.2.0/Knowledge/DefineanautomaticlookupinSplunkWeb
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:28: 작업1의 17번의 방법(https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11/ko-KR/task1)으로 Splunk 인스턴스에 Shell로 접속하여, 작업7 - AI Assistant 사용하기의 2번 명령어(https://catalog.us-east-1.prod.workshops.aws/workshops/542e9cc3-271c-4923-8231-756866995c11/ko-KR/task7)를 실행시켜주시고 Splunk를 재기동해주셔야 합니다. 해당 명령어로 파일 업로드 용량 제한을 올릴 수 있습니다.
+
+
+
+승완 서 (AWS) (대상 모두 - 전체 청중):
+
+오후 4:38: 안녕하세요, 진행중인 실습의 최종 결과물(대시보드)을 hkate@splunk.com 로 캡쳐해 보내주세요!  대시보드를 완성하신 모든 분들께 Splunk t-shirt 를 보내드립니다.
+- 성함  - 받으실 택배 주소  - 전화번호  - 티셔츠 사이즈  - 대시보드 전체 화면 캡쳐(로그인 이름 포함)
+// 중요! 리소스를 정리하기 전에, 먼저 캡처해서 저장해주세요!
+
+Splunk 세션을 마무리하기 전에, https://m.site.naver.com/1kxFC 에서 설문조사를 남겨주시면 100분을 추첨하여 커피 쿠폰을 보내드립니다!
+
+
+
+박지윤(Splunk OP) (대상 모두 - 전체 청중):
+
+오후 4:44: 대시보드 전체화면의 우측 상단에 표기되는 로그인 이름을 함께 캡쳐해서 메일로 전달주시면 됩니다.
+
+
+
+청중 질문
+
+질문: S3 별도로 삭제 해야 하나요??
+
+답변: S3에는 CloudFormation 템플릿 하나 올라간 버킷이 생성되셨을텐데, 별도로 삭제해주셔야 합니다. 다른 CFN 템플릿이 혹시 있지는 않은지 확인후에 삭제해주시면 됩니다.
+
+
+
